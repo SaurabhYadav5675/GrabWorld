@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Header_Layout"
+    android:clickable="true"
+    android:background="@color/back_layout">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/Header_profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="@dimen/dp_10"
+        android:elevation="4dp"
+        android:src="@drawable/grab1"
+        app:civ_border_color="@color/yellow"
+        app:civ_shadow_color="@color/yellow"
+        app:civ_shadow_radius="5"
+        android:clickable="true"/>
+    <TextView
+        android:id="@+id/Header_Name"
+        android:layout_marginTop="5dp"
+        android:textSize="10sp"
+        android:layout_marginLeft="20dp"
+        android:text="Parmesh Yadav"
+        android:layout_below="@+id/Header_profile"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:clickable="true"/>
+
+</RelativeLayout>

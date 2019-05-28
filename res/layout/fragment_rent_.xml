@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Rent_Fragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Home_View">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="10">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Rent_House"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/Img_house"
+                        android:layout_width="155dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/rent_house" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="160dp"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="3 BHK House"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="180dp"
+                        android:text="₹ 25,000/Month"
+                        android:textColor="@color/black" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Rent_Car"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/Img_Carrent"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/car_rent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="160dp"
+                        android:text="Maruti Suzuki Swift"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="180dp"
+                        android:text="₹ 500/Day"
+                        android:textColor="@color/black" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Rent_Camera"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginLeft="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/Img__Camerarent"
+                        android:layout_width="155dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/rent_camera" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="160dp"
+                        android:text="Canon 7D"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="180dp"
+                        android:text="₹ 500/Day"
+                        android:textColor="@color/black" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Rent_Books"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/Img_Books"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/book"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="160dp"
+                        android:text="Programming In java"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="180dp"
+                        android:text="₹ 150/Year"
+                        android:textColor="@color/black" />
+                </android.support.v7.widget.CardView>
+
+            </GridLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

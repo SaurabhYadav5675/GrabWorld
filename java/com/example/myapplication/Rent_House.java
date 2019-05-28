@@ -1,0 +1,29 @@
+package com.example.myapplication;
+
+import android.content.Intent;
+import android.net.Uri;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+
+import com.mikhaellopez.circularimageview.CircularImageView;
+
+public class Rent_House extends AppCompatActivity {
+    CircularImageView call;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_rent__house);
+        call=findViewById(R.id.RentCalls);
+        call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String data="tel:"+"7021610928";
+                Intent intent=new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse(data));
+                startActivity(intent);
+            }
+        });
+    }
+}

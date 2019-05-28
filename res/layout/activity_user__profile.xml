@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_back"
+    tools:context=".User_Profile">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/User_Profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/grab1" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/User_Edit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="100dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/edit_icon"
+        android:tint="@color/white"
+        app:rippleColor="@color/white" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/User_Profile"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp">
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/User_Profile"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:text="Edit"
+                android:textColor="#0423BE"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_20"
+                android:layout_toStartOf="@+id/Edit_switch"
+                android:layout_width="wrap_content"
+                android:paddingRight="@dimen/dp_10"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/Edit_switch" />
+            <Switch
+                android:id="@+id/Edit_switch"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/title_name"
+                    android:layout_marginLeft="20dp"
+                    android:text="Name"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/User_name"
+                android:text="Saurabh yadav"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="250dp"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/sp_20" />
+                <View
+                    android:layout_below="@+id/User_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/yellow"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Email-Id"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="@dimen/sp_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/User_Email"
+                android:text="Email"
+                android:layout_marginTop="10dp"
+                android:layout_width="250dp"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/sp_20" />
+                <View
+                    android:layout_below="@+id/User_Email"
+                    android:background="@color/yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Mobile"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="@dimen/sp_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/User_Mobile"
+                android:text="Mobile"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:enabled="false"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp" />
+
+                <View
+                    android:background="@color/yellow"
+                    android:layout_below="@+id/User_Mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Address"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="@dimen/sp_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/User_Address"
+                android:text="Address"
+                android:layout_width="250dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:textSize="@dimen/sp_20"
+                android:layout_marginLeft="@dimen/sp_20"
+                android:drawablePadding="@dimen/dp_10" />
+                <View
+                    android:layout_below="@+id/User_Address"
+                    android:background="@color/yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Password"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="@dimen/sp_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/User_Password"
+                    android:text="Password"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:enabled="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/Update_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellow"
+        android:text="Update Profile"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

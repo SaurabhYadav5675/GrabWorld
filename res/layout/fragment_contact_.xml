@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Contact_Fragment"
+    android:background="@color/App_back">
+<TextView
+    android:textSize="@dimen/sp_20"
+    android:layout_marginLeft="15dp"
+    android:textColor="@color/white"
+    android:text="Thank You for your interest in Grab World."
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/text_back">
+            <TextView
+                android:text="Grab World"
+                android:textSize="@dimen/dp_30"
+                android:textColor="@color/yellow"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Vikas Nagar , Behram Baug"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Jogeshwari West-400102"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="#120BD1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:textSize="15dp"
+                    android:text="For More Details Contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/parmesh_name"
+                    android:textColor="@color/yellow"
+                    android:layout_marginTop="@dimen/sp_20"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/sp_20"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:text="Parmesh Yadav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/Parmesh_facebook"
+                    android:layout_below="@+id/parmesh_name"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="40dp"
+                    android:src="@drawable/facebook"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:id="@+id/Parmesh_fec"
+                    android:textColor="#0C0CDA"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:textSize="15sp"
+                    android:layout_toEndOf="@+id/Parmesh_facebook"
+                    android:layout_marginRight="@dimen/sp_20"
+                    android:layout_below="@+id/parmesh_name"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Parmeshyadav867@gmail.com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/Parmesh_facebook" />
+                <TextView
+                    android:id="@+id/Parmesh_call"
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/sp_20"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="5dp"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/phone_icon"
+                    android:text="7738258007"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:id="@+id/Contact_view"
+                    android:background="#120BD1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@+id/Parmesh_fec"/>
+
+                <TextView
+                    android:layout_below="@+id/Contact_view"
+                    android:id="@+id/vikas_name"
+                    android:textColor="@color/yellow"
+                    android:layout_marginTop="@dimen/sp_20"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/sp_20"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:text="Vikas Singh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/vikas_facebook"
+                    android:layout_below="@+id/vikas_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="40dp"
+                    android:src="@drawable/facebook"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:id="@+id/vikas_fec"
+                    android:textColor="#0C0CDA"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:textSize="15sp"
+                    android:layout_marginRight="@dimen/sp_20"
+                    android:layout_below="@+id/vikas_name"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/vikas_facebook"
+                    android:layout_marginLeft="10dp"
+                    android:text="v.singhh98@gmail.com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/vikas_facebook" />
+                <TextView
+                    android:id="@+id/vikas_call"
+                    android:textColor="@color/yellow"
+                    android:drawablePadding="5dp"
+                    android:textSize="@dimen/sp_20"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@+id/Contact_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/sp_20"
+                    android:drawableRight="@drawable/phone_icon"
+                    android:text="7021610928"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</FrameLayout>

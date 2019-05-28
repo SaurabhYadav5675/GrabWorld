@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Home_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<android.support.v7.widget.SearchView-->
+            <!--android:id="@+id/Home_search"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/dp_10"-->
+            <!--android:layout_marginRight="@dimen/dp_10"-->
+            <!--android:layoutDirection="rtl"></android.support.v7.widget.SearchView>-->
+
+        <ViewFlipper
+            android:layout_marginTop="5dp"
+            android:id="@+id/Home_View"
+            android:layout_width="380dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="@dimen/sp_20"
+            android:layout_marginRight="@dimen/sp_20" />
+
+        <Button
+            android:background="@mipmap/circle_launcher"
+            android:id="@+id/Home_Sell"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="580dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <ScrollView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Home_View">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="10">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Card_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/Img_camera"
+                        android:layout_width="155dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/camera_pic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="160dp"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="Camera"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="180dp"
+                        android:text="Price:-31,500"
+                        android:textColor="@color/black" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Card_mobile"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/Img_mobile"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/oppo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="160dp"
+                        android:text="Oppo F9"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="180dp"
+                        android:text="Price:-15000"
+                        android:textColor="@color/black" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Card_bag"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginLeft="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/Img_bag"
+                        android:layout_width="155dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ladies_bag" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="160dp"
+                        android:text="Chanel Black Lambskin"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="180dp"
+                        android:text="Price:-2050"
+                        android:textColor="@color/black" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Card_laptop"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/Img_laptop"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/hp_elite"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="160dp"
+                        android:text="HP EliteBook"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="180dp"
+                        android:text="Price:-16,500/-"
+                        android:textColor="@color/black" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Card_car"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginLeft="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/Img_car"
+                        android:layout_width="155dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/cars_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="160dp"
+                        android:text="Hundai Elantra"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="180dp"
+                        android:text="Price:- 7 LAKH"
+                        android:textColor="@color/black" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Card_calculator"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/Img_calculator"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/casio_fx"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="160dp"
+                        android:text="Casio fx-991"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="180dp"
+                        android:text="Price:-800"
+                        android:textColor="@color/black" />
+                </android.support.v7.widget.CardView>
+
+            </GridLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+</FrameLayout>

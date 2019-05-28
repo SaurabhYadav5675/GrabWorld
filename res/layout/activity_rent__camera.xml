@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rent_Camera">
+
+    <ImageView
+        android:baseline="@dimen/dp_10"
+        android:focusable="true"
+        android:layout_marginTop="@dimen/sp_20"
+        android:id="@+id/Pro_img"
+        android:src="@drawable/rent_camera"
+        android:layout_centerHorizontal="true"
+        android:layout_width="280dp"
+        android:layout_height="250dp" />
+    <RelativeLayout
+        android:id="@+id/Pro_layout"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_below="@+id/Pro_img"
+        android:background="@color/App_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/User_img"
+            android:src="@drawable/black_user"
+            android:layout_margin="5dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <TextView
+            android:id="@+id/User_Pname"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toEndOf="@+id/User_img"
+            android:textSize="15dp"
+            android:text="Name:-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/User_img" />
+
+        <TextView
+
+            android:id="@+id/User_PName1"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/sp_20"
+            android:layout_toEndOf="@+id/User_Pname"
+            android:textSize="15dp"
+            android:text="Harshad Chavan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/User_img" />
+
+        <TextView
+
+            android:id="@+id/User_PEmail"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/User_Pname"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toEndOf="@+id/User_img"
+            android:textSize="15dp"
+            android:text="Email:-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/User_img" />
+
+        <TextView
+            android:id="@+id/User_PEmail1"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/sp_20"
+            android:layout_below="@+id/User_PName1"
+            android:layout_toEndOf="@+id/User_PEmail"
+            android:textSize="15dp"
+            android:text=" Harshadsd54@gmail.com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/User_img" />
+    </RelativeLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/HarshadCalls"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/phone_icon"
+        android:layout_marginRight="@dimen/sp_20"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/Pro_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <EditText
+                    android:textColor="@color/black"
+                    android:text="Maruti Suzuki Swift"
+                    android:textSize="@dimen/sp_20"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/sp_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"/>
+                <EditText
+                    android:textColor="@color/black"
+                    android:text="₹ 500/Day + Demage Charges"
+                    android:textSize="@dimen/sp_20"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/sp_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"/>
+                <EditText
+                    android:id="@+id/Descri"
+                    android:textColor="@color/black"
+                    android:text="This Vehicle Provides Mileage of 22 to 28 Kmpl with front Dual Airbags.Inbuild with Automatic Climate control"
+                    android:textSize="@dimen/sp_20"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/sp_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"/>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
